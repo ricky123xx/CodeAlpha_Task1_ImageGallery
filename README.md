@@ -11,7 +11,7 @@ This is my Task 1 for the CodeAlpha Frontend Internship.
 Just open `index.html` in a browser.
 
 ## Live demo
- https://ricky123xx.github.io/CodeAlpha_Task1_ImageGallery/
+code-alpha-task1-image-gallery.vercel.app
 
 ## Author
 Antariksh Dilkhush Sawarbandhe
