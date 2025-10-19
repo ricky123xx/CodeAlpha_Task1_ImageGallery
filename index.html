@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        <div class="upload-section">
+            <input type="file" id="image-upload" accept="image/*" multiple>
+            <label for="image-upload" class="upload-btn">Upload Images</label>
+            <select id="category-select">
+                <option value="nature">Nature</option>
+                <option value="city">City</option>
+                <option value="animals">Animals</option>
+                <option value="brazilianite">Brazilianite</option>
+            </select>
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+            <button class="filter-btn" data-filter="brazilianite">Brazilianite</button>
+        </div>
+        <div class="image-filters">
+            <button class="image-filter-btn active" data-image-filter="none">Normal</button>
+            <button class="image-filter-btn" data-image-filter="grayscale(100%)">Grayscale</button>
+            <button class="image-filter-btn" data-image-filter="sepia(100%)">Sepia</button>
+            <button class="image-filter-btn" data-image-filter="blur(2px)">Blur</button>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=1" alt="Nature Image 1">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=2" alt="City Image 1">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=3" alt="Animal Image 1">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=4" alt="Nature Image 2">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=5" alt="City Image 2">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=6" alt="Animal Image 2">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=7" alt="Nature Image 3">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=8" alt="City Image 3">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=9" alt="Animal Image 3">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=10" alt="Brazilianite Image 1">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=11" alt="Nature Image 4">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=12" alt="City Image 4">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=13" alt="Animal Image 4">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=14" alt="Brazilianite Image 2">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=15" alt="Nature Image 5">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=16" alt="City Image 5">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=17" alt="Animal Image 5">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=18" alt="Brazilianite Image 3">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=19" alt="Nature Image 6">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=20" alt="City Image 6">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=21" alt="Animal Image 6">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=22" alt="Brazilianite Image 4">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=23" alt="Nature Image 7">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=24" alt="City Image 7">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=25" alt="Animal Image 7">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=26" alt="Brazilianite Image 5">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=27" alt="Nature Image 8">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=28" alt="City Image 8">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=29" alt="Animal Image 8">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=30" alt="Brazilianite Image 6">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=31" alt="Nature Image 9">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=32" alt="City Image 9">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=33" alt="Animal Image 9">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=34" alt="Brazilianite Image 7">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="https://picsum.photos/400/300?random=35" alt="Nature Image 10">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=36" alt="City Image 10">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=37" alt="Animal Image 10">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=38" alt="Brazilianite Image 8">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=39" alt="Brazilianite Image 9">
+            </div>
+            <div class="gallery-item" data-category="brazilianite">
+                <img src="https://picsum.photos/400/300?random=40" alt="Brazilianite Image 10">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=41" alt="Animal Image 11">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=42" alt="City Image 11">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=43" alt="Animal Image 12">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=44" alt="City Image 12">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=45" alt="Animal Image 13">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=46" alt="City Image 13">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=47" alt="Animal Image 14">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=48" alt="City Image 14">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://picsum.photos/400/300?random=49" alt="Animal Image 15">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://picsum.photos/400/300?random=50" alt="City Image 15">
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <button id="prev-btn" class="nav-btn"><</button>
+            <button id="next-btn" class="nav-btn">></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
