@@ -1,0 +1,5 @@
+- [x] Create index.html with gallery structure, filters, and lightbox
+- [x] Create styles.css for layout, responsiveness, hover effects, transitions
+- [x] Create script.js for filters and lightbox navigation
+- [x] Test the gallery by opening index.html in browser
+- [x] Add image upload functionality
